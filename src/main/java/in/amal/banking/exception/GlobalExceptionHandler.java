@@ -1,7 +1,7 @@
-package in.amal.retail.exception;
+package in.amal.banking.exception;
 
-import in.amal.retail.model.CommonResponse;
-import in.amal.retail.util.Utils;
+import in.amal.banking.model.CommonResponse;
+import in.amal.banking.util.Utils;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.logging.log4j.LogManager;

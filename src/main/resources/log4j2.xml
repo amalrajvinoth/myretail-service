@@ -5,7 +5,7 @@
     </Properties>
 
     <Appenders>
-        <RollingFile name="fileLogger" fileName="${basePath}/retail-service.log" filePattern="${basePath}/retail--service-%d{yyyy-MM-dd}.log">
+        <RollingFile name="fileLogger" fileName="${basePath}/account-service.log" filePattern="${basePath}/account--service-%d{yyyy-MM-dd}.log">
             <PatternLayout>
                 <pattern>[%d{yyyy-MM-dd_HH:mm:ss.SSS} | [%thread] | %-5level | %logger{36} | %msg]%n</pattern>
             </PatternLayout>
@@ -19,7 +19,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="in.amal.retail" level="debug" additivity="false">
+        <Logger name="in.amal.banking" level="debug" additivity="false">
             <appender-ref ref="fileLogger" level="debug" />
             <appender-ref ref="console" level="debug" />
         </Logger>

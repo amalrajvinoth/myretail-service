@@ -1,4 +1,4 @@
-package in.amal.retail.swagger;
+package in.amal.banking.swagger;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

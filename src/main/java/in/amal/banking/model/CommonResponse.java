@@ -1,4 +1,4 @@
-package in.amal.retail.model;
+package in.amal.banking.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;

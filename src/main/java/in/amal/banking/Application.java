@@ -1,13 +1,10 @@
-package in.amal.retail;
+package in.amal.banking;
 
-import in.amal.retail.exception.GlobalExceptionHandler;
-import it.ozimov.springboot.mail.configuration.EnableEmailTools;
+import in.amal.banking.exception.GlobalExceptionHandler;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@EnableAutoConfiguration
 @SpringBootApplication
 @ComponentScan(basePackageClasses = {Application.class, GlobalExceptionHandler.class})
 public class Application {

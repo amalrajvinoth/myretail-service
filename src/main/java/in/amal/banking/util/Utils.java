@@ -1,6 +1,6 @@
-package in.amal.retail.util;
+package in.amal.banking.util;
 
-import in.amal.retail.model.CommonResponse;
+import in.amal.banking.model.CommonResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;

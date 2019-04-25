@@ -1,4 +1,4 @@
-package in.amal.retail.swagger;
+package in.amal.banking.swagger;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ import static springfox.documentation.builders.PathSelectors.*;
 public class SwaggerConfig {
 
     // prefix for api version 1
-    private static final String V1 = "retail";
+    private static final String V1 = "account";
     
     @Autowired
     private TypeResolver typeResolver;
@@ -47,15 +47,16 @@ public class SwaggerConfig {
         .apiInfo(info)
         .groupName(V1)
         .select()
-          .paths(regex(".*/"+V1+".*"))
+          //.paths(regex(".*/"+V1+".*"))
+                .paths(any())
           .build();
     }
 
     
     private ApiInfo buildApiInfo(String ver) {
         return new ApiInfoBuilder()
-                .title("My Retail Service")
-                .description("REST API for My Retail Service")
+                .title("Account Service")
+                .description("REST API for Account Service")
                 .version(ver)
                 .build();
     }
